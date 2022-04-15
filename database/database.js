@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 //   var {MLAB_URL} = require('../config.js');
 // }
 
-mongoose.connect(process.env.MLAB_URL);
+mongoose.connect(process.env.MONGODB_URI);
 
 var db = mongoose.connection;
 

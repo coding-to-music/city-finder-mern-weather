@@ -1,5 +1,5 @@
 {
-  "name": "city-finder",
+  "name": "city-finder-mern-weather",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,13 @@
     "start": "webpack -p && node server/index.js",
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/index.js",
-    "soda-seed": "node database/socrataHelpers.js"
+    "soda-seed": "node database/socrataHelpers.js",
+    "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku"
   },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],  
   "author": "Foobacke/Loggoe",
   "license": "ISC",
   "devDependencies": {
