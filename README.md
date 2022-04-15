@@ -103,6 +103,7 @@ heroku create city-finder-mern-weather
 ```java
 heroku config:set
 
+
 heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/city-finder-mern-weather?retryWrites=true&w=majority"
 heroku config:set PASSWORD="something-secret"
 
